@@ -1,0 +1,427 @@
+/* plus-jakarta-sans-500 - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/plus-jakarta-sans-v3-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/plus-jakarta-sans-v3-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/plus-jakarta-sans-v3-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/plus-jakarta-sans-v3-latin-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/plus-jakarta-sans-v3-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/plus-jakarta-sans-v3-latin-500.svg#PlusJakartaSans') format('svg'); /* Legacy iOS */
+  }
+  /* plus-jakarta-sans-700 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/plus-jakarta-sans-v3-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/plus-jakarta-sans-v3-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/plus-jakarta-sans-v3-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/plus-jakarta-sans-v3-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/plus-jakarta-sans-v3-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/plus-jakarta-sans-v3-latin-700.svg#PlusJakartaSans') format('svg'); /* Legacy iOS */
+  }
+  /* plus-jakarta-sans-800 - latin */
+  @font-face {
+    font-display: swap;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/plus-jakarta-sans-v3-latin-800.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/plus-jakarta-sans-v3-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/plus-jakarta-sans-v3-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/plus-jakarta-sans-v3-latin-800.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/plus-jakarta-sans-v3-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/plus-jakarta-sans-v3-latin-800.svg#PlusJakartaSans') format('svg'); /* Legacy iOS */
+  }
+
+  /* Colors */
+
+:root {
+
+    --light-blue : #666CA3;
+    --dark-blue : #13183F;
+    --grey: #83869A;
+    --pink: #F74780;
+    --light-pink: #FFA7C3;
+    --white: #FFFFFF;
+    --grad-orange-pink: linear-gradient( #ff6f48, #f02aa6);
+    --grad-orange-pink-hover: linear-gradient(#f02aa6, #ff6f48, 0.3);
+    --grad-blue-pink: linear-gradient(#4851FF, #F02AA6); 
+    --grad-blue-pink-hover: linear-gradient(#f02aa6, #ff6f48, 0.3);
+    --grad-white-lightgrey: linear-gradient(#FFFFFF, #F0F1FF);
+    --bg-cards: var(--grad-white-lightgrey);
+    --bg-first-btn: var(--dark-blue);
+    --bg-first-btn-hover : var(--light-blue);
+    --bg-second-btn: var(--grad-orange-pink);
+    --bg-second-btn-hover : var(--grad-orange-pink-hover);
+    --bg-third-btn: var(--grad-blue-pink);
+    --bg-third-btn-hover: var(--grad-blue-pink-hover);
+
+}
+
+*:focus {
+    outline: 2px solid var(--bg-first-btn-hover);
+    outline-offset: 0.5rem;
+}
+body{
+    background-image: var(--bg-cards);
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+}
+
+.button{
+    display:inline-block;
+    line-height: 28px;
+    text-decoration:none;
+    color:#FFF;
+    border-radius: 28px;
+    border:none;
+    min-width: 140px;
+    max-width:150px;
+    min-height:48px;
+    max-height:50px;
+    font-weight: 700;
+    font-size:16px;
+}
+
+/* Backgrounds color and image boutons */
+
+#bg-first-btn{
+    background-color : var(--bg-first-btn);
+}
+#bg-first-btn:hover{
+    background-color: var(--bg-first-btn-hover);
+}
+#bg-second-btn{
+    margin-top:24px;
+    background-image: var(--bg-second-btn);
+}
+#bg-second-btn:hover{
+    opacity: .5;
+}
+#bg-third-btn{
+    background-image: var(--bg-third-btn);
+}
+#bg-third-btn:hover{
+    opacity: .5;
+}
+
+/* Fonts texts */
+
+.logo {
+    font-weight:800;
+    font-size:28px;
+    color:var(--dark-blue);
+}
+
+.h1{
+    font-size: 4rem;
+    color:var(--dark-blue);
+    line-height: 4rem;
+    padding-top: 38px;
+    font-weight:800;
+    line-height: 50px;
+}
+.txt-14-b{
+    font-size:1.4rem;
+    color:var(--grey);
+    font-weight: 700;
+}
+.txt-32-Eb{
+    font-size:3.2rem;
+    font-weight: 800;
+}
+
+.tx-card{
+    font-size:1.6rem;
+    color:var(--grey);
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.title-desc-btn{
+    display:grid;
+    row-gap: 1em;
+}
+.description{
+    color:var(--grey);
+}
+.hero{
+    display:grid;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
+.stats{
+    display:grid;
+    margin-top:46px;
+    max-width: 37.5rem;
+    margin:auto;
+}
+
+
+.bloc1{
+    grid-area: -1/1/6/2;
+    width:3.7rem;
+}
+
+.block-circle-gradient{
+    border-radius:50%;
+    background-image: var(--bg-second-btn);
+    overflow: hidden;
+    grid-area: 2 / 2 / 5 / 5;
+    width: 250px;
+    height: 250px;
+    z-index: 1;
+    
+}
+#coffeeGirl {
+    margin-left: 1rem;
+}
+.members {
+    display: inline-block;
+    background-color: white;
+	border: none;
+	border-radius: 10%;
+	padding: 1.6rem 2rem;
+	box-shadow: 22px 30px 50px 10px rgba(131, 134, 154, 0.2);
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 100px;
+    width: 100px;
+    z-index: 2;
+}
+
+.course-hours{
+    background-color: white;
+    display:inline-block;
+    box-shadow: 22px 30px 50px 10px rgba(131, 134, 154, 0.2);
+    border: none;
+    border-radius:10%;
+    padding:1.6rem 2rem;
+    grid-area: 4 /1 /6 /3;
+    width: 150px;
+    height: 100px;
+    z-index: 2;
+}
+
+
+.bloc4{
+    grid-area:3/3/4/4;
+    width:67px;
+    height:100px;
+}
+
+@media (min-width:760px) {
+    .logo{
+        font-size: clamp(1rem, 2rem + 1.25vw, 4.6rem);
+        padding-left:clamp(1rem, 1vw, 2rem);
+    }
+    .hero{
+        min-height:540px;
+        grid-template-columns:1fr 1fr;
+        max-width:780px;
+        margin-top: 3.6rem;
+        align-items: center;
+        justify-content: center; 
+    }
+    .title-desc-btn{
+        width:100%;
+    }
+    .h1 {
+        margin-block-end: .75em;
+        font-weight: 800;
+        font-size: clamp(4rem,4.3vw, 5.2rem);
+        /* line-height: 1; */
+        width: auto;
+    }
+    .description{
+        font-size: clamp(1.6rem, 2vw,1.8rem);
+    }
+    .button{
+        margin-right:clamp(1rem, 1vw, 2rem);
+    }
+    .stats{
+        max-width: clamp(434px, 560px, 560px);
+        margin:0;
+        justify-content: center;
+    }
+    .bloc1{
+        width:100px;
+    }
+    .block-circle-gradient{
+        min-height:390px;
+        border-radius: 158.5px;
+        max-width: 220px;
+    }
+    #coffeeGirl {
+        margin-left:0;
+        position:relative;
+        top:58px;
+
+
+    }
+    .members{
+        position:relative;
+        left:30px;
+        top:40px;
+    }
+    .bloc4{
+        width:4px;
+    }
+}
+
+.cards{
+    display:grid;
+    margin-top: 6rem;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+
+}
+.block-check-out {
+    display: inline-block;
+    background-image: var(--bg-second-btn);
+    border-radius:10px;
+    margin-top: 6.6rem;
+    min-width: 340px;
+    min-height:120px;
+    max-width:350px;
+    max-height: 320px;
+}
+
+
+.block-check-out p{
+    color:#FFF;
+    font-size:2.4rem;
+    font-weight:800;
+    padding-top:2.4rem;
+    padding-right:8%;
+    padding-left: 8%;
+    line-height: 3.2rem;
+   
+}
+.card {
+	display: grid;
+	margin-top: 4rem;
+	padding-bottom: 3.2rem;
+	background-color: #fff;
+	border-radius: 10px;
+	min-width: 340px;
+	max-width: 350px;
+	max-height: 320px;
+	padding-left: 28px;
+	padding-right: 28px;
+	align-content: space-between;
+}
+
+.card img{
+    position: relative;
+    bottom: 24px;
+}
+.card h2{
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--dark-blue);
+}
+.card p{
+    padding-top: 1.6rem;
+    
+}
+.card-links{
+    padding-top: 2.4rem;
+}
+.card-links a{
+    text-decoration: none;
+    color: var(--pink);
+    font-weight:700;
+    font-size: 1.8rem;
+}
+@media (min-width:760px) {
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        max-width:780px;
+    }
+
+    .block-check-out {
+        min-height: 26rem;
+        margin:40px 0 0 0;
+        padding-top:5.6rem;
+        padding-left:3.2rem;
+    }
+}
+
+@media (min-width:1100px) {
+    .hero{
+        max-width: 1110px;
+        grid-template-columns: 457fr 555fr;
+        gap:98;
+    }
+    .stats {
+        max-width:100%;
+    }
+    .bloc1{
+        width:100px;
+    }
+    .block-circle-gradient{
+        height:560px;
+        min-width:317px;
+    }
+    #coffeeGirl{
+        position:relative;
+        top:100px;
+        left:10px;
+        height:483px;
+        width:350px;
+    }
+    .members{
+        position:relative;
+        left:100px;
+        top:120px;
+        width: 155px; 
+    }
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+        max-width:1150px;
+    }
+    .block-check-out {
+        min-height: 26rem;
+        margin:40px 0 0 0;
+        padding-top:5.6rem;
+        padding-left:3.2rem;
+    }
+    .card h2{
+        font-weight: 800;
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+    .tx-card{
+        font-size: 18px;
+    }
+}
+
+.footer{
+    background-color: var(--bg-first-btn);
+    margin-top:8rem;
+    display:flex;
+    justify-content:space-between;
+    padding: 1.6rem 3.6rem;
+    width:100%; 
+}
+.logo-footer {
+    color:#FFF;
+    font-weight:800;
+    font-size:2.8rem;
+}
